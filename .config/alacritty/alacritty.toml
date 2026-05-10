@@ -1,0 +1,8 @@
+
+[general]
+import = ["~/.config/alacritty/themes/tokyonight-night.toml"]
+
+[font]
+normal = { family = "MapleMono NL NF", style = "Regular" }
+size = 11
+
