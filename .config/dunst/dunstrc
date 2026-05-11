@@ -1,0 +1,35 @@
+# See dunst(5) for all configuration options
+
+[global]
+	monitor = 0
+	frame_width = 1
+	background = "#1e1e2e"
+	corner_radius = 5
+	progress_bar_corner_radius = 4
+	corners = top-left, bottom
+	offset = (15, 15)
+	gap_size = 5
+	format = <b>󰁕 %a</b>\n%s\n<i>%b</i>
+
+[urgency_low]
+	foreground = "#a6e3a1"
+	frame_color = "#a6e3a1"
+	default_icon = "~/.config/dunst/icons/bell-badge-low.svg"
+
+[urgency_normal]
+	foreground = "#74c7ec"
+	frame_color = "#74c7ec"
+	highlight = "#74c7ec"
+	default_icon = "~/.config/dunst/icons/bell-badge.svg"
+
+[urgency_critical]
+	foreground = "#f38ba8"
+	frame_color = "#f38ba8"
+	default_icon = "~/.config/dunst/icons/alert-decagram.svg"
+
+[grim_screenshot]
+	appname = grim
+	icon_position = top
+	max_icon_size = 300
+	min_icon_size = 300
+
