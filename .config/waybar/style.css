@@ -1,0 +1,81 @@
+
+@define-color main-fg       #ffffff;
+@define-color main-bg       #000000;
+@define-color wb-act-fg     #ffffff;
+@define-color wb-act-bg     #2d7188;
+@define-color red           #ff0000;
+@define-color green         #00ff00;
+
+* {
+    font-family: MapleMono NL NF;
+    font-weight: bold;
+    font-size: 97%;
+    padding: 0.03125rem;
+}
+
+#waybar {
+    background: rgba(255,255,255,0);
+}
+
+.modules-left, .modules-center, .modules-right {
+	background: @main-bg;
+	padding: 0px 4px 0px 4px;
+	border-radius: 12px;
+	margin: 4px 4px 0px 4px;
+}
+
+.modules-left, .modules-right {
+	padding-right: 14px;
+	padding-left: 14px;
+}
+
+#workspaces button {
+    color: @main-fg;
+    padding: 0px 3px;
+    margin: 3px 0px;
+    border-radius: 9px;
+    animation: ws_normal 20s ease-in-out 1;
+}
+
+#workspaces button.active {
+    color: @wb-act-fg;
+    background-color: @wb-act-bg;
+    margin: 3px 0px;
+    padding-left: 12px;
+    padding-right: 12px;
+    animation: ws_active 20s ease-in-out 1;
+    transition: all 0.4s cubic-bezier(.55,-0.68,.48,1.682);
+}
+
+#clock,
+#pulseaudio,
+#tray,
+#window,
+#workspaces,
+#custom-spotify,
+#custom-media,
+#custom-separator {
+    color: @main-fg;
+    background: @main-bg;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-left: 6px;
+    padding-right: 6px;
+}
+
+#cpu {
+	color: @green;
+}
+
+#custom-power {
+	color: @red;
+}
+
+#custom-left_cap {
+    border-radius: 21px 0px 0px 21px;
+}
+
+#custom-right_cap {
+    border-radius: 0px 21px 21px 0px;
+}
+
